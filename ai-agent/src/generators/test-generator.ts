@@ -36,7 +36,7 @@ export class TestGenerator {
       `;
 
       const response = await this.anthropic.messages.create({
-        model: 'claude-3-sonnet-20240229',
+        model: 'claude-sonnet-5',
         max_tokens: 3000,
         messages: [{ role: 'user', content: prompt }]
       });
@@ -87,7 +87,7 @@ test('should handle basic functionality', async ({ page }) => {
         `;
 
         const response = await this.anthropic.messages.create({
-          model: 'claude-3-sonnet-20240229',
+          model: 'claude-sonnet-5',
           max_tokens: 1000,
           messages: [{ role: 'user', content: prompt }]
         });
@@ -146,7 +146,7 @@ test('should handle basic functionality', async ({ page }) => {
         `;
 
         const response = await this.anthropic.messages.create({
-          model: 'claude-3-sonnet-20240229',
+          model: 'claude-sonnet-5',
           max_tokens: 3000,
           messages: [{ role: 'user', content: prompt }]
         });
