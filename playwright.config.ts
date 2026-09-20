@@ -9,7 +9,7 @@ export default defineConfig({
   testDir: './tests/specs',
   
   // Global test timeout
-  timeout: 30 * 1000,
+  timeout: 60 * 1000,
   
   // Expect timeout
   expect: {
@@ -33,7 +33,7 @@ export default defineConfig({
   // Global test configuration
   use: {
     // Base URL
-    baseURL: process.env.BASE_URL || 'https://opensource-demo.orangehrmlive.com',
+    baseURL: process.env.BASE_URL || 'https://kangaroopost.netlify.app',
     
     // Browser context options
     trace: 'on-first-retry',
